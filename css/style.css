@@ -1,0 +1,231 @@
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+.dashboard__left {
+  height: 100vh;
+  padding: 40px;
+  background-color: #191c24;
+}
+.dashboard__right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.dashboard nav {
+  width: 100%;
+  background-color: #191c24;
+  height: 30px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.dashboard__img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.dashboard__title {
+  font-size: 34px;
+  font-weight: bold;
+  color: red;
+}
+.dashboard__w {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 20px;
+}
+.dashboard__performance {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard__name {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.dashboard__role {
+  font-size: 16px;
+  color: rgb(139, 139, 139);
+}
+.dashboard body {
+  background: #111;
+}
+.dashboard .sidebar {
+  width: 260px;
+  padding-top: 20px;
+}
+.dashboard .menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 20px;
+  color: #f1f1f1;
+  cursor: pointer;
+  position: relative;
+}
+.dashboard .icon {
+  width: 32px;
+  height: 32px;
+  background: #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.dashboard .text {
+  font-size: 18px;
+  flex: 1;
+}
+.dashboard .arrow {
+  font-size: 14px;
+}
+.dashboard .menu:hover {
+  background: #111;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.dashboard .menu:hover .text {
+  color: #ff3c00;
+  font-weight: bold;
+}
+.dashboard .menu .line {
+  position: absolute;
+  left: -10px;
+  width: 6px;
+  height: 100%;
+  background: #ff3c00;
+  border-radius: 5px;
+}
+.dashboard .menu:hover .icon {
+  color: #ff3c00;
+}
+.dashboard .titles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.dashboard .svg {
+  width: 32px;
+  height: 32px;
+  color: #ff3c00;
+}
+.dashboard .navbar__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #000;
+  width: 53px;
+  border-radius: 50%;
+  padding: 12px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.dashboard .navbar__burger span {
+  display: block;
+  height: 3px;
+  background: #ff0000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.dashboard .navbar__search {
+  margin-left: 40px;
+  width: 300px;
+  background: #000;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+.dashboard .logout {
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #ff0000;
+  font-size: 16px;
+  background: inherit;
+  border: 1px solid #ff0000;
+  padding: 10px;
+  border-radius: 20px;
+}
+.dashboard .logout:hover {
+  background: #ff0000;
+  transition: all 1s linear;
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Forma */
+form {
+  width: 320px;
+  border: 1px solid #ff0000;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(199px);
+          backdrop-filter: blur(199px); /* faqat shu */
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 350px auto;
+}
+
+/* Input */
+form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+form input::-moz-placeholder {
+  color: #000000;
+}
+
+form input::placeholder {
+  color: #000000;
+}
+
+/* Button */
+form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff0000, #000000);
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff0000;
+}/*# sourceMappingURL=style.css.map */

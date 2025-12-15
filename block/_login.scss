@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Forma */
+form {
+    width: 320px;
+    border: 1px solid #ff0000;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(199px); /* faqat shu */
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 350px auto;
+}
+
+/* Input */
+form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    font-size: 15px;
+}
+
+form input::placeholder {
+    color: #000000;
+}
+
+/* Button */
+form button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff0000, #000000);
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff0000;
+}

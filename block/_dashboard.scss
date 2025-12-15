@@ -1,0 +1,177 @@
+.dashboard {
+  display: flex;
+  width: 100%;
+
+  &__left {
+    height: 100vh;
+    padding: 40px;
+    background-color: #191c24;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  nav {
+    width: 100%;
+    background-color: #191c24;
+    height: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  &__img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: bold;
+    color: red;
+  }
+  &__w {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+  }
+  &__performance {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__name {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  &__role {
+    font-size: 16px;
+    color: rgb(139, 139, 139);
+  }
+
+  body {
+    background: #111;
+  }
+
+  .sidebar {
+    width: 260px;
+    padding-top: 20px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 20px;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    background: #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 18px;
+    flex: 1;
+  }
+
+  .arrow {
+    font-size: 14px;
+  }
+
+  .menu:hover {
+    background: #111;
+    border-radius: 30px;
+    margin: 0 10px;
+  }
+
+  .menu:hover .text {
+    color: #ff3c00;
+    font-weight: bold;
+  }
+
+  .menu .line {
+    position: absolute;
+    left: -10px;
+    width: 6px;
+    height: 100%;
+    background: #ff3c00;
+    border-radius: 5px;
+  }
+
+  .menu:hover .icon {
+    color: #ff3c00;
+  }
+  .titles{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  .svg{
+    width: 32px;
+    height: 32px;
+    color: #ff3c00;
+  }
+  .navbar__burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #000;
+    width: 53px;
+    border-radius: 50%;
+    padding: 12px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .navbar__burger span{
+    display: block;
+    height: 3px;
+    background: #ff0000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.navbar__search{
+  margin-left: 40px;
+  width: 300px;
+  background: #000;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+.logout{
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #ff0000;
+  font-size: 16px;
+  background: inherit;
+  border: 1px solid #ff0000;
+  padding: 10px;
+  border-radius: 20px;
+}
+.logout:hover{
+  background: #ff0000;
+  transition: all 1s linear;
+  transform: scale(1.1);
+  color: #ffffff;
+}
+}
