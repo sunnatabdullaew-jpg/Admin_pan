@@ -101,7 +101,7 @@
             <span class="text">Forms</span>
           </div>
 
-          <div class="menu">
+          <div id="tables" class="menu">
             <div class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +128,7 @@
                 ></path>
               </svg>
             </div>
-            <span class="text">Charts</span>
+            <span id="chats" class="text">Charts</span>
           </div>
 
           <div class="menu">
@@ -162,12 +162,38 @@
           />
           <button class="logout">Logout</button>
         </nav>
-        <main></main>
+        <main>
+          <table class="table-body">
+            <thead>
+              <tr>
+                <th>T/R</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Describtion</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div class="graph">
+            <div class="chart-box">
+              <div class="chart-controls">
+                <button class="chart-btn active" data-type="line">Line</button>
+                <button class="chart-btn" data-type="bar">Bar</button>
+              </div>
+              <canvas id="userChart"></canvas>
+            </div>
+          </div>
+          
+        </main>
       </div>
     </section>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="../untils/dashboard.js"></script>
-    
   </body>
 </html>

@@ -106,6 +106,9 @@
 .dashboard .menu:hover .icon {
   color: #ff3c00;
 }
+.dashboard .flex {
+  display: flex;
+}
 .dashboard .titles {
   display: flex;
   align-items: center;
@@ -162,6 +165,115 @@
   transition: all 1s linear;
   transform: scale(1.1);
   color: #ffffff;
+}
+.dashboard th {
+  color: #ff0000;
+}
+.dashboard tr {
+  color: #ffffff;
+}
+.dashboard .btn-success {
+  background: black;
+  width: 50px;
+  margin-top: 9px;
+  color: #ffffff;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 9px;
+}
+.dashboard main {
+  overflow: auto;
+  height: calc(100vh - 130px);
+}
+.dashboard table {
+  border-collapse: collapse;
+  display: none;
+}
+.dashboard th {
+  text-align: start;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-weight: 100;
+  font-size: 17px;
+  border: 1px solid red;
+  padding: 12px;
+}
+.dashboard .id {
+  color: white;
+}
+.dashboard td {
+  border: 1px solid red;
+  font-weight: 100;
+  padding: 12px;
+  text-align: end;
+}
+.dashboard td:nth-child(1) {
+  text-align: start;
+  font-weight: 900;
+  font-size: 13px;
+  color: #ffffff;
+}
+.dashboard td:nth-child(2),
+.dashboard td:nth-child(3) {
+  text-align: center;
+}
+.dashboard tr:nth-child(odd) {
+  background-color: #000000;
+}
+.dashboard tr:nth-child(even) {
+  background-color: rgb(0, 0, 0);
+}
+.dashboard .graph {
+  display: none;
+  width: 1500px;
+  margin-left: 50px;
+}
+.dashboard .chart-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  animation: fadeUp 0.6s ease;
+  transition: all 0.5s ease;
+}
+.dashboard .chart-box:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+}
+.dashboard .chart-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.dashboard .chart-btn {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #cbd5f5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dashboard .chart-btn.active {
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+}
+.dashboard .chart-btn:hover {
+  background: rgba(56, 189, 248, 0.6);
+  color: #020617;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 * {
