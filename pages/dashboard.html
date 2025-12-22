@@ -160,6 +160,7 @@
             class="navbar__search"
             placeholder="Search..."
           />
+          <button class="add-product">+ Add Product</button>
           <button class="logout">Logout</button>
         </nav>
         <main>
@@ -177,16 +178,28 @@
             </thead>
             <tbody></tbody>
           </table>
-          <div class="graph">
-            <div class="chart-box">
-              <div class="chart-controls">
-                <button class="chart-btn active" data-type="line">Line</button>
-                <button class="chart-btn" data-type="bar">Bar</button>
-              </div>
-              <canvas id="userChart"></canvas>
+          <section class="modal__background">
+            <!-- modal -->
+
+            <div class="modal none__2">
+              <form class="form">
+                <input type="text" placeholder="Title" name="title" />
+                <input type="number" placeholder="Price " name="price" />
+                <input
+                  type="text"
+                  placeholder="Describtion"
+                  name="description"
+                />
+                <input type="text" placeholder="Category" name="category" />
+                <input type="url" placeholder="Image" name="image" />
+
+                <div class="div">
+                  <button class="cancel-modal">Cancel</button>
+                  <button class="save-product">Save</button>
+                </div>
+              </form>
             </div>
-          </div>
-          
+          </section>
         </main>
       </div>
     </section>

@@ -276,6 +276,44 @@
   }
 }
 
+.none {
+  display: none !important;
+}
+
+.none__2 {
+  display: none !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.add-product {
+  margin-left: 40px;
+  width: 120px;
+  background: #ff3c00;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: -50px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
