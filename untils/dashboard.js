@@ -163,6 +163,7 @@ elEditModal.addEventListener("submit", (e) => {
     category,
     image
   };
+  
 
   fetch(`https://fakestoreapi.com/products/${ediID}`, {
     method: "PUT",
@@ -187,7 +188,6 @@ function editProduct(id) {
   const elEditModalContainer = document.querySelector(".edit");
   elEditModalContainer.classList.toggle("none__2");
 
-  // Fetch existing product data to pre-fill the edit form
   fetch(`https://fakestoreapi.com/products/${id}`)
     .then((res) => res.json())
     .then((product) => {
